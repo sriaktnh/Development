@@ -9,7 +9,7 @@ import milligram from "milligram/dist/milligram.css"; // eslint-disable-line no-
 export const DemoButtons = () => (
   <div>
     <h6 styleName="custom.docs-header">
-      demo CSS modules with buttons from <a href="https://milligram.io/">milligram</a>
+      demo CSS modules with buttons from I created new branch <a href="https://milligram.io/">milligram</a>
     </h6>
     <div styleName="custom.docs-example">
       <a styleName="milligram.button" href="#">
