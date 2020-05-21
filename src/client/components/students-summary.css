@@ -1,0 +1,30 @@
+.tableContent {
+    border: 1px solid rgba(0,0,0,0.35);
+    padding: 11px;   
+}
+.filterDropdown {
+    margin-top: 30px;
+    width: 250px;
+    float: right;
+}
+.searchBar{
+    margin-top: 30px;
+    width: 250px !important
+}
+.payedColor{
+    background-color: #9dc69d;
+}
+.unPayedColor{
+    background-color: #d07f7f;
+}
+.trContent{
+    color: black
+}
+.modalLink {
+    display: inline-block;
+    padding-left: 286px;
+    color: blue;
+}
+.linkStyle{
+    cursor: pointer;
+}

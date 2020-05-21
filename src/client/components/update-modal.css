@@ -1,0 +1,12 @@
+.modalcontainer{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+.modalcontent{
+    top: 50%;
+    position: relative;
+    color: red;
+    left: 50%;
+}

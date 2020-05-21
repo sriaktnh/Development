@@ -61,12 +61,15 @@ const showFakeComp = (store, action) => {
   }
   return store || { value: false };
 };
-
+const showStdDetails = (store, action) => {
+  return []
+}
 export default combineReducers({
   checkBox,
   number,
   username,
   textarea,
   selectedOption,
-  showFakeComp
+  showFakeComp,
+  showStdDetails
 });

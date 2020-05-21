@@ -7,6 +7,13 @@ import demoStyle from "../styles/demo2.css"; // eslint-disable-line no-unused-va
 class Demo2 extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      showModal:false
+    }
+  }
+   onClickHandler () {
+    console.log('this is on click event', this.state.showModal)
+    this.setState({showModal:true})
   }
 
   render() {
@@ -15,6 +22,9 @@ class Demo2 extends Component {
         <Nav {...this.props} />
         <section styleName="custom.header">
           <h2>Buttons Demo</h2>
+        {this.state.showModal && <div>
+          Hello this is model class
+        </div>}
           <div styleName="demoStyle.main">
             <div styleName="demoStyle.sub-main">
               <button styleName="demoStyle.button-one">Tap Me</button>
@@ -24,8 +34,8 @@ class Demo2 extends Component {
                 <span>Hover Me</span>
               </button>
             </div>
-            <div styleName="demoStyle.sub-main">
-              <button styleName="demoStyle.button-three">Click Me</button>
+            <div styleName="demoStyle.sub-main" onClick={()=>this.onClickHandler()}>
+              <button styleName="demoStyle.button-three" >Click Me</button>
             </div>
           </div>
         </section>

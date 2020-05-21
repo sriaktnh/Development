@@ -16,11 +16,10 @@ import { routes } from "../../client/routes";
 //
 
 let routesEngine;
-
 module.exports = req => {
   if (!routesEngine) {
     routesEngine = new ReduxRouterEngine({ routes });
   }
-
+  console.log('index view jsx file', routesEngine)
   return routesEngine.render(req);
 };
